@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.c195.controller.AppointmentTableViewController" spacing="10" alignment="CENTER">
+    <TableView fx:id="appointmentTableView">
+        <columns>
+            <TableColumn fx:id="appointmentIdColumn" text="Appointment ID"/>
+            <TableColumn fx:id="titleColumn" text="Title"/>
+            <TableColumn fx:id="descriptionColumn" text="Description"/>
+            <TableColumn fx:id="locationColumn" text="Location"/>
+            <TableColumn fx:id="contactColumn" text="Contact"/>
+            <TableColumn fx:id="typeColumn" text="Type"/>
+            <TableColumn fx:id="startColumn" text="Start Date and Time"/>
+            <TableColumn fx:id="endColumn" text="End Date and Time"/>
+            <TableColumn fx:id="customerIdColumn" text="Customer ID"/>
+            <TableColumn fx:id="userIdColumn" text="User ID"/>
+        </columns>
+    </TableView>
+    <ComboBox fx:id="filterComboBox" onAction="#onFilter"/>
+    <Button fx:id="addButton" text="Add" onAction="#onAdd"/>
+    <Button fx:id="updateButton" text="Update" onAction="#onUpdate"/>
+    <Button fx:id="deleteButton" text="Delete" onAction="#onDelete"/>
+    <Button fx:id="backButton" text="Back to Main Menu" onAction="#onBackToMainMenu"/>
+</VBox>

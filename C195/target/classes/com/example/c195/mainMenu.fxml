@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.c195.controller.MainMenuController" stylesheets="@styles/styles.css">
+    <VBox spacing="10.0" alignment="CENTER" styleClass="vbox">
+        <Button text="Manage Appointments" onAction="#onManageAppointments" styleClass="button" />
+        <Button text="Manage Customers" onAction="#onManageCustomers" styleClass="button" />
+        <Button text="Reports" onAction="#onViewReports" styleClass="button" />
+        <Button text="Exit" onAction="#onExit" styleClass="button" />
+    </VBox>
+</AnchorPane>

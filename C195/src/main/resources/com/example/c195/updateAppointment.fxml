@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.example.c195.controller.UpdateAppointmentController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="Appointment ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="appointmentIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" editable="false"/>
+
+    <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Location:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="Contact:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <ComboBox fx:id="contactComboBox" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="typeField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <Label text="Start Date:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <DatePicker fx:id="startDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    <Label text="Start Time:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <ComboBox fx:id="startHourComboBox" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <ComboBox fx:id="startMinuteComboBox" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+
+    <Label text="End Date:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <DatePicker fx:id="endDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+
+    <Label text="End Time:" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <ComboBox fx:id="endHourComboBox" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+    <ComboBox fx:id="endMinuteComboBox" GridPane.columnIndex="2" GridPane.rowIndex="9"/>
+
+    <Label text="Customer ID:" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <ComboBox fx:id="customerIdComboBox" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+
+    <Label text="User ID:" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <ComboBox fx:id="userIdComboBox" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+
+    <Button text="Update" fx:id="updateButton" onAction="#onUpdate" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+    <Button text="Cancel" fx:id="cancelButton" onAction="#onCancel" GridPane.columnIndex="1" GridPane.rowIndex="12"/>
+</GridPane>
